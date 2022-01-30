@@ -25,6 +25,7 @@ class TikcerSpider(Spider):
         'FEED_EXPORT_ENCODING':'utf-8'
     }
 
+
     #CONSTANTS
     TICKER_XPATH_EXPRESSION = '//table[@id="symbol-table"]//a[starts-with(@href,"/stocks")]/text()'
     COMPANY_XPATH_EXPRESSION = '//table[@id="symbol-table"]//tr//td[2]/text()'
@@ -61,7 +62,6 @@ class TikcerSpider(Spider):
         select_element = self.__get_select_web_element()
         self.__get_page(select_element)
         
-
    
     def parse(self, response): 
         """
