@@ -2,6 +2,8 @@
 
 
 #Scrapy
+from operator import ipow
+from urllib import response
 from scrapy import Spider
 from scrapy import Selector
 
@@ -28,7 +30,11 @@ class TikcerSpider(Spider):
     COMPANY_XPATH_EXPRESSION = '//table[@id="symbol-table"]//tr//td[2]/text()'
     INDUSTRY_XPATH_EXPRESSION = '//table[@id="symbol-table"]//tr//td[3]/text()'
     SELECT_ELEMENT_XPATH_EXPRESSION = '//select[@name="perpage"]'
-
+    COUNTRY_XPATH_XPRESSION = '//table[contains(@class,"profile-table")]/tbody/tr[1]/td[2]/text()'
+    FOUNDED_XPATH = '//table[contains(@class,"profile-table")]/tbody/tr[2]/td[2]/text()'
+    #IPO_DATE_XPATH = '//table[contains(@class,"profile-table")]/tbody/tr[3]/td[2]/text()'
+    EXCHANGE_XPATH = '//table[@class="jsx-30f513a7f98e863c w-full detailstable"]/tbody/tr[2]/td[2]/text()'
+    
 
     def __selenium_conf__(self) -> None:
         """
@@ -72,16 +78,37 @@ class TikcerSpider(Spider):
         tickers = resp.xpath(self.TICKER_XPATH_EXPRESSION).getall()
         names = resp.xpath(self.COMPANY_XPATH_EXPRESSION).getall()
         industries = resp.xpath(self.INDUSTRY_XPATH_EXPRESSION).getall()
-
         info = list(zip(tickers, names, industries))
 
         for t,n,i in info:
-            yield {
-                'company': n,
-                'ticker_symbol':t,
-                'industriy': i
-            }
+            link = ('https://stockanalysis.com/stocks/' + t + '/company')
+
+            yield response.follow(link, callback=self.parse_company, cb_kwargs={'ticker_symbol':t,
+                                                                                'company': n,
+                                                                                'industry': i,
+                                                                                'link': link
+                                                                                }
+            )
     
+
+    def parse_company(self, response, **kwargs):
+        company_data = kwargs
+        country = response.xpath(self.COUNTRY_XPATH_XPRESSION).get()
+        founded = response.xpath(self.FOUNDED_XPATH).get()
+        #ipo = response.xpath(self.IPO_DATE_XPATH).get()
+        exchange = response.xpath(self.EXCHANGE_XPATH).get()
+
+        yield {
+            'company': company_data['company'],
+            'ticker_symbol': company_data['ticker_symbol'],
+            'country': country,
+            #'ipo_date': ipo,
+            'founded': founded,
+            'industry': company_data['industry'],
+            'exchange': exchange
+        }
+
+
     def __get_select_web_element(self):
         """Method to get the <select> Web Element to use it and select the option needed
 
