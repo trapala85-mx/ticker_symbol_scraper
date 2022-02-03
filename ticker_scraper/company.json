@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Agilent Technologies, Inc.",
+        "ticker": "A",
+        "sector": "Healthcare",
+        "industry": "Diagnostics & Research",
+        "web_page": "https://www.agilent.com",
+        "company_resume": "Agilent Technologies, Inc. provides application focused solutions to the life sciences, diagnostics, and applied chemical markets worldwide. The Life Sciences and Applied Markets segment offers liquid chromatography systems and components; liquid chromatography mass spectrometry systems; gas chromatography systems and components; gas chromatography mass spectrometry systems; inductively coupled plasma mass spectrometry instruments; atomic absorption instruments; microwave plasma-atomic emission spectrometry instruments; inductively coupled plasma optical emission spectrometry instruments; raman spectroscopy; cell analysis plate based assays; flow cytometer; real-time cell analyzer; cell imaging systems; microplate reader; laboratory software; information management and analytics; laboratory automation and robotic systems; dissolution testing; vacuum pumps, and measurement technologies. The Diagnostics and Genomics segment provides arrays for DNA mutation detection, genotyping, gene copy number determination, identification of gene rearrangements, DNA methylation profiling, gene expression profiling, next generation sequencing, target enrichment and genetic data management, and interpretation support software; and produces synthesized oligonucleotide. It also offers immunohistochemistry in situ hybridization, and hematoxylin and eosin staining and special staining; consumables, and software for quality control analysis of nucleic acid samples; and reagents for use in turbidimetry and flow cytometry, as well as develops liquid-based pharmacodiagnostics. The Agilent CrossLab segment provides GC and LC columns, sample preparation products, custom chemistries, and laboratory instrument supplies; and startup, operational, training, compliance support, software as a service, asset management, and consultation services. The company markets its products through direct sales, distributors, resellers, manufacturer's representatives, and electronic commerce. Agilent Technologies, Inc. was incorporated in 1999 and is headquartered in Santa Clara, California."
+    },
+    {
+        "name": "Alcoa Corporation",
+        "ticker": "AA",
+        "sector": "Basic Materials",
+        "industry": "Aluminum",
+        "web_page": "https://www.alcoa.com",
+        "company_resume": "Alcoa Corporation, together with its subsidiaries, produces and sells bauxite, alumina, and aluminum products in the United States, Spain, Australia, Brazil, Canada, and internationally. The company operates through three segments: Bauxite, Alumina, and Aluminum. It engages in bauxite mining operations; and processes bauxite into alumina and sells it to customers who process it into industrial chemical products, as well as aluminum smelting, casting, and rolling businesses. The company offers primary aluminum in the form of alloy ingot or value-add ingot to customers that produce products for the transportation, building and construction, packaging, wire, and other industrial markets; and flat-rolled aluminum sheets to customers that produce beverage and food cans. In addition, it owns hydro power plants that produce and sell electricity to the wholesale market to traders, large industrial consumers, distribution companies, and other generation companies. The company was formerly known as Alcoa Upstream Corporation and changed its name to Alcoa Corporation in October 2016. The company was founded in 1888 and is headquartered in Pittsburgh, Pennsylvania."
+    },
+    {
+        "name": "Aareal Bank AG",
+        "ticker": "AAALF",
+        "sector": "Financial Services",
+        "industry": "Banks\u2014Regional",
+        "web_page": "https://www.aareal-bank.com",
+        "company_resume": "Aareal Bank AG, together with its subsidiaries, provides financing, software products, digital solutions, and payment transaction applications for the property sector and related industries in Germany and internationally. The company operates through three segments: Structured Property Financing, Banking & Digital solutions, and Aareon. The Structured Property Financing segment offers property financing and refinancing solutions for office buildings, hotels, and shopping centers, as well as retail, logistics, residential properties, and student apartments. This segment also provides deposits, registered and bearer Pfandbriefe, promissory note loans, medium-term notes, debt securities, private placements, other bonds and subordinated issues, mortgage Pfandbriefe, and public sector Pfandbriefe. The Banking & Digital solutions segment offers various services and products for the housing, commercial property, and energy and waste disposal industries. Its services include specialized banking, payment systems, and optimized business processes. The Aareon segment provides IT systems consultancy and related advisory services, enterprise resource planning systems, software solutions, hosting and software as a service, and in-house services. Aareal Bank AG was founded in 1923 and is headquartered in Wiesbaden, Germany."
+    },
+    {
+        "name": "Asia Broadband, Inc.",
+        "ticker": "AABB",
+        "sector": "Basic Materials",
+        "industry": "Other Industrial Metals & Mining",
+        "web_page": "https://asiabroadbandinc.com",
+        "company_resume": "Asia Broadband, Inc., through its subsidiary, Asia Metals Inc., focuses on the production, supply, and sale of precious and base metals primarily in Asian markets. It also operates AABB Gold token, a minted mine-to-token gold-backed cryptocurrency; and AABB Wallet. The company was incorporated in 1996 and is based in Las Vegas, Nevada."
+    },
+    {
+        "name": "Ares Acquisition Corporation",
+        "ticker": "AAC",
+        "sector": "Financial Services",
+        "industry": "Shell Companies",
+        "web_page": "https://www.aresacquisitioncorporation.com",
+        "company_resume": "Ares Acquisition Corporation focuses on effecting a merger, share exchange, asset acquisition, share purchase, reorganization, or similar business combination with one or more businesses. The company was founded in 2020 and is based in New York, New York."
+    }
+]
